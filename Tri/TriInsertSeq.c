@@ -6,8 +6,9 @@
 //  Copyright © 2016 AnthonyBertrant_BriceMaussang. All rights reserved.
 //
 #include <stdio.h>
+#include "TriInsertSeq.h"
 
-void TriInsertSeq(int *array)
+void TriInsertSeq(TABLEAU array)
 {
   int i, p, x;
   
@@ -17,6 +18,7 @@ void TriInsertSeq(int *array)
     while (array[p] < array[i]) ++p;
     
     x = array[i];
+    
     for (j = i-1; p <= j; j = j-1)
       array[j+1] = t[j];
       
